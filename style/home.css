@@ -1,0 +1,26 @@
+@font-face {
+    font-family: satoshi;
+    src: url("../assets/font/Satoshi_Complete/Fonts/OTF/Satoshi-Black.otf");
+}
+
+*{
+    background-color: #000000;
+    color: white;
+    margin: auto;
+    font-family: satoshi;
+    padding: 0;
+}
+
+.profil{
+    display: inline-flex;
+    margin-top: 20px;
+    margin-left: 20px;
+    gap: 20px;
+}
+
+.imgBig{
+    margin-top: 100px;
+    margin-left: 70px;
+}
+
+
