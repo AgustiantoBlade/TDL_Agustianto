@@ -1,12 +1,9 @@
 <?php
-session_start();
+SESSION_START();
 
-if(!isset ($_SESSION ['uname'])){
-?>
-<script>
-    alert("silahkan login dulu");
-    location.href = "login.php";
-</script>
-<?php
+if (!isset($_SESSION['username'])) {
+    // Pengguna tidak diautentikasi, redirect ke halaman login
+    header("Location: login.php");
+    exit;
 }
 ?>

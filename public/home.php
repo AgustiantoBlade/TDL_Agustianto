@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>to do list</title>
     <link rel="stylesheet" href="../style/home1.css">
+
+    <?php
+    include "../config/security.php";
+    ?>
 </head>
 
 <body>
@@ -17,8 +21,15 @@
                     <img src="../assets/img/Rectangle1.png" alt="">
                 </div>
                 <div class="uname">
-                    <h2>Code Blaze</h2>
-                    <p>codeblaze@gmail.com</p>
+                    <?php
+                    echo "Hello ". $_SESSION['fullname'];
+                    ?>
+                    <?php
+                    echo "<br>";
+                    ?>
+                    <?php
+                    echo $_SESSION['email'];
+                    ?>
                 </div>
                 <button onclick="logout()">logout</button>
             </div>

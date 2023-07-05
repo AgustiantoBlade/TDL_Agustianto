@@ -6,8 +6,10 @@ if (isset($_POST['submit'])) {
     if (isset($_POST['username']) && isset($_POST['password'])) {
         $username = $_POST['username'];
         $password = md5($_POST['password']);
+        $email = $_POST['email'];
+        $fullname=$_POST['fullname'];
         
-        $query = mysqli_query($conn, "SELECT * FROM tb_user WHERE username = '$username' AND password = '$password'");
+        $query = mysqli_query($conn, "SELECT * FROM tb_user WHERE username = '$username' AND password = '$password' AND email='$email'");
 
         if (mysqli_num_rows($query) > 0) {
             $row = mysqli_fetch_assoc($query);
@@ -19,6 +21,7 @@ if (isset($_POST['submit'])) {
             $_SESSION['id'] = $id;
             $_SESSION['email'] = $email;
             $_SESSION['username'] = $username;
+            $_SESSION['fullname'] = $fullname;
 
             if ($status == 1) {
             // User is an admin (status = 1) // kalau status yang dimasukkan 1 maka pindah ke laman admin

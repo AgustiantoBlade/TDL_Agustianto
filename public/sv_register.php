@@ -24,7 +24,7 @@ if($num == 0){
 } else {
 ?>
 <script>
-    alert ("data sudah ada");
+    alert ("data sudah ada sebelumnya");
     location.href = "register.php";
 </script>
 <?php

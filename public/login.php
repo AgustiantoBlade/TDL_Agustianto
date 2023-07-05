@@ -5,7 +5,7 @@
     <script src="https://kit.fontawesome.com/2c04a65836.js" crossorigin="anonymous"></script>
     <title>Login</title>
     <link rel="icon" type="image/x-icon" href="./assets/faviconTK.ico">
-    <link rel="stylesheet" href="../style/login.css">
+    <link rel="stylesheet" href="../style/login1.css">
 
 </head>
 
@@ -17,7 +17,19 @@
                 <h3>Username</h3>
                 <div class="inputText">
                     <i class="fa-solid fa-user" style="color: #c0c0c2;"></i>
-                    <input class="textField" type="text" name="username" id="email" placeholder="Type your username..."
+                    <input class="textField" type="text" name="username" id="username" placeholder="Type your username..."
+                        required />
+                </div>
+                <h3>Email</h3>
+                <div class="inputText">
+                    <i class="fa-solid fa-user" style="color: #c0c0c2;"></i>
+                    <input class="textField" type="email" name="email" id="email" placeholder="Type your email..."
+                        required />
+                </div>
+                <h3>Fullname</h3>
+                <div class="inputText">
+                    <i class="fa-solid fa-user" style="color: #c0c0c2;"></i>
+                    <input class="textField" type="text" name="fullname" id="fullname" placeholder="Type your full name..."
                         required />
                 </div>
                 <h3>Password</h3>
