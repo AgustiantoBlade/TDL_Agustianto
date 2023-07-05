@@ -46,7 +46,8 @@
                 <div class="list">
                     <img src="../assets/img/Category.png" alt="">
                     <p>Membuat to do list</p>
-                    <div class="date">Jul 5</div>
+                    <br>
+                    <p>Jul 5</p>
                 </div>  
             </div>
 
