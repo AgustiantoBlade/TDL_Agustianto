@@ -1,0 +1,22 @@
+body{
+    width: 100%;
+    font-family: satoshi;
+    display: flex;
+}
+
+.container{
+    margin: auto;
+    width: 40%;
+    height: 50%;
+    background-color: grey;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.button_submit{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}

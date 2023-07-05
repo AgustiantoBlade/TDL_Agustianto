@@ -5,17 +5,8 @@
     <script src="https://kit.fontawesome.com/2c04a65836.js" crossorigin="anonymous"></script>
     <title>Login</title>
     <link rel="icon" type="image/x-icon" href="./assets/faviconTK.ico">
-    <link rel="stylesheet" href="./assets/css/style_login.css">
-    <style type="text/css">
-        body {
-            background-image: url('<?php echo $bg; ?>');
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            height: 100%;
-            image-rendering: -webkit-optimize-contrast;
-        }
-    </style>
+    <link rel="stylesheet" href="../style/login.css">
+
 </head>
 
 <body>
@@ -23,10 +14,10 @@
         <div class="containerForm"><br>
             <h1>Login</h1>
             <form method="post" action="sv_login.php">
-                <h3>Email</h3>
+                <h3>Username</h3>
                 <div class="inputText">
                     <i class="fa-solid fa-user" style="color: #c0c0c2;"></i>
-                    <input class="textField" type="text" name="email" id="email" placeholder="Type your email..."
+                    <input class="textField" type="text" name="username" id="email" placeholder="Type your username..."
                         required />
                 </div>
                 <h3>Password</h3>
