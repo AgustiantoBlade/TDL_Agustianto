@@ -1,9 +1,12 @@
 <?php
-SESSION_START();
-
-if (!isset($_SESSION['username'])) {
-    // Pengguna tidak diautentikasi, redirect ke halaman login
-    header("Location: login.php");
-    exit;
+session_start();
+if (!isset($_SESSION['email']) && !isset($_SESSION['password'])) {
+    ?>
+    <script>
+        alert("Please Login!");
+        location.href = "../index.php";
+    </script>
+    <?php
+    exit(); // Add exit() after the redirect to stop further code execution
 }
 ?>
